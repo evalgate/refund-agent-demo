@@ -1,0 +1,6 @@
+node_modules/
+proof/
+.evalgate/
+evals/regression-report.json
+evals/last-run.json
+evals/last-run-artifacts/

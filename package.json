@@ -1,0 +1,1 @@
+{"name":"evalgate-refund-agent-demo","version":"1.0.0","private":true,"description":"Reproduce an approval-before-refund regression with the published EvalGate SDK.","engines":{"node":">=24"},"scripts":{"demo":"bash scripts/prove.sh","gate":"evalgate gate --format json"},"devDependencies":{"@evalgate/sdk":"3.13.0"}}

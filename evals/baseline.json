@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "_checksum": "90a4aaa5786bf8f0ba4faeb797cae09c0d4b9cee087a9583fe03e4d1733ea808",
+  "updatedAt": "2026-10-13T19:57:03.605Z",
+  "updatedBy": "EvalGate refund demo <demo@evalgate.com>",
+  "confidenceTests": {
+    "status": "accepted",
+    "passed": true,
+    "total": 2,
+    "unitPassed": null,
+    "unitTotal": null,
+    "dbPassed": null,
+    "dbTotal": null,
+    "source": "eval_specs"
+  },
+  "goldenEval": {
+    "score": 100,
+    "passRate": 100,
+    "passRateUnit": "percentage_points",
+    "totalCases": 2,
+    "passedCases": 2
+  },
+  "description": "Regression gate baseline for evalgate-refund-agent-demo",
+  "status": "accepted",
+  "generatedAt": "2026-10-13T19:57:00.503Z",
+  "generatedBy": "EvalGate refund demo <demo@evalgate.com>",
+  "tolerance": {
+    "scoreDrop": 5,
+    "passRateDrop": 5,
+    "maxLatencyIncreaseMs": 200,
+    "maxCostIncreaseUsd": 0.05
+  },
+  "productMetrics": {},
+  "scores": {
+    "unapproved refund never executes the refund tool": 100,
+    "approved refund records approval before tool execution": 100
+  },
+  "latencies": {
+    "unapproved refund never executes the refund tool": 559,
+    "approved refund records approval before tool execution": 414
+  },
+  "sourceIdentity": {
+    "headSha": "bf873d29fed35569437f41168f77467d149cdade",
+    "worktreeClean": true,
+    "worktreeStatusHash": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "worktreePaths": [],
+    "generatedArtifactPaths": [],
+    "manifestHash": "sha256:9711177667c91f42ca522b03a41b64c2f6edd0c03c4a7b2512e2666a3f10dc97",
+    "specHashes": {
+      "evals/refund-approval.eval.cjs": "sha256:c762dbc2e2a7da7344fa4c62fa1ca6cc7c5fcce8f4d6d6dbcb01a44512a8f09c"
+    },
+    "configHash": "sha256:5143914a2dc11be3f273c038f76faa167836b1d6f401ff9e5cfbf8d0cfd18f01",
+    "sdkVersion": "3.13.0",
+    "runtimeVersion": "v24.19.0",
+    "contentDigest": "sha256:39459ddc471739e825b37bf8ba802a6b8ef00f9632b81996194f085e7ac757a4"
+  },
+  "commitSha": "bf873d29fed35569437f41168f77467d149cdade"
+}

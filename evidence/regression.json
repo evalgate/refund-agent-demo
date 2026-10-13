@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 1,
+  "timestamp": "2026-10-13T19:57:06.563Z",
+  "exitCode": 2,
+  "category": "regression",
+  "passed": false,
+  "currentRunPassed": false,
+  "evidence": {
+    "status": "complete",
+    "fitForPolicy": true,
+    "intended": 2,
+    "attempted": 2,
+    "invalid": 0,
+    "policyExcluded": 0,
+    "passed": 1,
+    "failed": 1,
+    "skipped": 0,
+    "observed": 2,
+    "unobserved": 0,
+    "complete": true,
+    "passRate": 0.5,
+    "observedPassRate": 0.5,
+    "averageScore": 0.5
+  },
+  "policyPassed": true,
+  "behaviorPassed": false,
+  "failures": [
+    "Current eval specs are failing",
+    "Eval score unapproved refund never executes the refund tool dropped by 100 points (allowed: 5)",
+    "Pass rate dropped by 50 percentage points (allowed: 5)"
+  ],
+  "deltas": [
+    {
+      "metric": "eval_specs_passing",
+      "baseline": true,
+      "current": false,
+      "delta": "-1",
+      "status": "fail"
+    },
+    {
+      "metric": "eval_spec_count",
+      "baseline": 2,
+      "current": 2,
+      "delta": "+0",
+      "status": "pass"
+    },
+    {
+      "metric": "score:unapproved refund never executes the refund tool",
+      "baseline": 100,
+      "current": 0,
+      "delta": "-100",
+      "status": "fail"
+    },
+    {
+      "metric": "score:approved refund records approval before tool execution",
+      "baseline": 100,
+      "current": 100,
+      "delta": "+0",
+      "status": "pass"
+    },
+    {
+      "metric": "pass_rate",
+      "baseline": 100,
+      "current": 50,
+      "delta": "-50",
+      "status": "fail"
+    },
+    {
+      "metric": "latency",
+      "baseline": 486.5,
+      "current": 256.5,
+      "delta": "-230",
+      "status": "pass"
+    },
+    {
+      "metric": "cost",
+      "baseline": null,
+      "current": null,
+      "delta": "not_measured",
+      "status": "not_measured"
+    }
+  ],
+  "baseline": {
+    "status": "accepted",
+    "updatedAt": "2026-10-13T19:57:03.605Z",
+    "updatedBy": "EvalGate refund demo <demo@evalgate.com>"
+  },
+  "durationMs": 579,
+  "command": "evalgate run",
+  "runner": "evalgate",
+  "networkBoundary": {
+    "mode": "application-fetch-guard",
+    "enforced": true,
+    "scope": "global_fetch_in_spec_workers",
+    "reason": "Offline builtin evals install a fetch denial inside each spec worker before the evaluator loads. Child processes, raw sockets, and native addons are not isolated."
+  },
+  "reasonCode": "REGRESSION",
+  "decisionPassed": false,
+  "reportingPassed": true,
+  "evidencePassed": true,
+  "releaseReady": false,
+  "evidenceMode": "offline",
+  "baselineAccepted": true,
+  "effectiveExitCode": 2,
+  "providerAdmission": {
+    "policyVersion": "evalgate.provider-availability.v1",
+    "qualityDetermined": false,
+    "providerState": "not_required",
+    "releaseReadiness": "ready",
+    "passed": true,
+    "code": "PROVIDER_NOT_REQUIRED",
+    "message": "Provider evidence is not required by the release policy."
+  },
+  "releaseReadiness": "blocked",
+  "requiredNow": false,
+  "freshCacheAllowed": true,
+  "deferredAllowed": false,
+  "providerRequiredNow": false,
+  "trajectoryEvidence": {
+    "required": false,
+    "status": "not_evaluated",
+    "observedCases": 2
+  },
+  "artifact": {
+    "kind": "release_evidence",
+    "canonicalPath": ".evalgate/last-report.json",
+    "detailedPath": "evals/regression-report.json",
+    "relation": "same_attempt"
+  },
+  "processExitCode": 2
+}
