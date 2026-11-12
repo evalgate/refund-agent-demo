@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "timestamp": "2026-10-13T19:57:08.362Z",
+  "timestamp": "2026-11-12T09:39:08.871Z",
   "exitCode": 0,
   "category": "pass",
   "passed": true,
@@ -22,6 +22,18 @@
     "observedPassRate": 1,
     "averageScore": 1
   },
+  "cases": [
+    {
+      "name": "unapproved refund never executes the refund tool",
+      "status": "passed",
+      "durationMs": 221
+    },
+    {
+      "name": "approved refund records approval before tool execution",
+      "status": "passed",
+      "durationMs": 212
+    }
+  ],
   "policyPassed": true,
   "behaviorPassed": true,
   "failures": [],
@@ -63,10 +75,11 @@
     },
     {
       "metric": "latency",
-      "baseline": 486.5,
-      "current": 188,
-      "delta": "-298.5",
-      "status": "pass"
+      "baseline": 223,
+      "current": 216.5,
+      "delta": "-6.5",
+      "status": "pass",
+      "enforcement": "advisory"
     },
     {
       "metric": "cost",
@@ -78,10 +91,10 @@
   ],
   "baseline": {
     "status": "accepted",
-    "updatedAt": "2026-10-13T19:57:03.605Z",
+    "updatedAt": "2026-11-12T09:39:05.864Z",
     "updatedBy": "EvalGate refund demo <demo@evalgate.com>"
   },
-  "durationMs": 459,
+  "durationMs": 500,
   "command": "evalgate run",
   "runner": "evalgate",
   "networkBoundary": {
@@ -123,5 +136,54 @@
     "detailedPath": "evals/regression-report.json",
     "relation": "same_attempt"
   },
-  "processExitCode": 0
+  "processExitCode": 0,
+  "enforcementReceipt": {
+    "schemaVersion": 1,
+    "id": "ci-gate:93489f3d690f5245e207751fecb03b202532ee482d6628788bdaf6a725797274",
+    "source": "local_ci_gate",
+    "boundary": "ci_release",
+    "target": null,
+    "action": null,
+    "environment": null,
+    "deploymentVersion": null,
+    "policyVersion": "evalgate.local-release-gate.v1",
+    "policyHash": "sha256:69de5751bbc176bdfcb902b644c485b1ec4f8513d8338dde5303af6144067f9f",
+    "policyInputs": {
+      "version": "evalgate.local-release-gate.v1",
+      "sdkVersion": "3.18.2",
+      "options": {
+        "allowEmpty": false,
+        "offline": true,
+        "providerRequiredNow": false,
+        "freshCacheAllowed": true,
+        "deferredAllowed": false
+      },
+      "baselineHash": "sha256:15ff8d00f4f67001a456236601c9ac357aaee794094a332a88f96e0cf9b6bd82",
+      "configurationHash": "sha256:ce3a33fa9866d31eca5086efc740cec85dffcdf1780ee41ccae86dfeae194d1d",
+      "packageHash": "sha256:0641dfe0ddba812c8864376aafc13bf6b5f90bca174e3476e2a5067b7096c839",
+      "goldenHash": null
+    },
+    "timing": "release_gate",
+    "mode": "advisory",
+    "outcome": "unconfirmed",
+    "scopeComplete": false,
+    "processExitCode": 0,
+    "sourceIdentity": {
+      "headSha": "b10c79f7472b20bfbf469fd96a43417864c3bac1",
+      "worktreeClean": true,
+      "worktreeStatusHash": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "worktreePaths": [],
+      "generatedArtifactPaths": [],
+      "manifestHash": "sha256:3c457b34d8a865ccb129eacbb7d7357065616b5bde5de5abef6d70716b5e0b9a",
+      "specHashes": {
+        "evals/refund-approval.eval.cjs": "sha256:c762dbc2e2a7da7344fa4c62fa1ca6cc7c5fcce8f4d6d6dbcb01a44512a8f09c"
+      },
+      "configHash": "sha256:5143914a2dc11be3f273c038f76faa167836b1d6f401ff9e5cfbf8d0cfd18f01",
+      "sdkVersion": "3.18.2",
+      "runtimeVersion": "v24.22.2",
+      "contentDigest": "sha256:175da94e113fd2153832ed3fd9435fe642152eba10851d4fe43deca660e33622"
+    },
+    "coverage": "Only the CI release step that consumes this process exit; downstream business tools and direct calls require their own enforcement receipts."
+  },
+  "artifactHash": "sha256:e3aec803bb58cd2218582879f60ecd287c422fe1ab2b58dfaa0691bfa4320fab"
 }
