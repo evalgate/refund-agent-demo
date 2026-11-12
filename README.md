@@ -2,7 +2,7 @@
 
 Use AI for more of your work. Keep your standards.
 
-Run an approval-before-refund check with the **published `@evalgate/sdk@3.13.0`**.
+Run an approval-before-refund check with the **published `@evalgate/sdk@3.18.2`**.
 The gate executes two deterministic evaluations of a local agent and refund tool:
 
 | Agent implementation | Expected gate outcome |

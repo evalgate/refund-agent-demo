@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "_checksum": "90a4aaa5786bf8f0ba4faeb797cae09c0d4b9cee087a9583fe03e4d1733ea808",
-  "updatedAt": "2026-10-13T19:57:03.605Z",
+  "_checksum": "f4a986494d3375b960ebd1e3281fe32e7b91d0d9c6d09423015025c1a7dad3d1",
+  "updatedAt": "2026-11-12T09:39:05.864Z",
   "updatedBy": "EvalGate refund demo <demo@evalgate.com>",
   "confidenceTests": {
     "status": "accepted",
@@ -36,23 +36,23 @@
     "approved refund records approval before tool execution": 100
   },
   "latencies": {
-    "unapproved refund never executes the refund tool": 559,
-    "approved refund records approval before tool execution": 414
+    "unapproved refund never executes the refund tool": 252,
+    "approved refund records approval before tool execution": 194
   },
   "sourceIdentity": {
-    "headSha": "bf873d29fed35569437f41168f77467d149cdade",
+    "headSha": "b108884bdae584cd78f6bb24e1cb28e4708c1dbb",
     "worktreeClean": true,
     "worktreeStatusHash": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "worktreePaths": [],
     "generatedArtifactPaths": [],
-    "manifestHash": "sha256:9711177667c91f42ca522b03a41b64c2f6edd0c03c4a7b2512e2666a3f10dc97",
+    "manifestHash": "sha256:3c457b34d8a865ccb129eacbb7d7357065616b5bde5de5abef6d70716b5e0b9a",
     "specHashes": {
       "evals/refund-approval.eval.cjs": "sha256:c762dbc2e2a7da7344fa4c62fa1ca6cc7c5fcce8f4d6d6dbcb01a44512a8f09c"
     },
     "configHash": "sha256:5143914a2dc11be3f273c038f76faa167836b1d6f401ff9e5cfbf8d0cfd18f01",
-    "sdkVersion": "3.13.0",
-    "runtimeVersion": "v24.19.0",
-    "contentDigest": "sha256:39459ddc471739e825b37bf8ba802a6b8ef00f9632b81996194f085e7ac757a4"
+    "sdkVersion": "3.18.2",
+    "runtimeVersion": "v24.22.2",
+    "contentDigest": "sha256:61f0bd3753326c9aba327611648517a5f5c3b13eb97ac318d60c642aa2a8ba66"
   },
-  "commitSha": "bf873d29fed35569437f41168f77467d149cdade"
+  "commitSha": "b108884bdae584cd78f6bb24e1cb28e4708c1dbb"
 }

@@ -53,4 +53,4 @@ rm "$work/original-agent.cjs"
 git add src/refund-agent.cjs
 git commit -qm "restore human approval guard"
 check_gate restored 0
-printf 'Published @evalgate/sdk@3.13.0: PASS -> BLOCK -> PASS\n'
+printf 'Published @evalgate/sdk@3.18.2: PASS -> BLOCK -> PASS\n'
